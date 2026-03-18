@@ -19,7 +19,6 @@ public class ExcelReportService {
     public void create(List<FundResult> results, String path) throws Exception {
         Workbook wb = new XSSFWorkbook();
         Sheet sheet = wb.createSheet("基金决策报告");
-
         String[] headers = {
                 "基金代码","基金名称","最新净值","MA20","5日涨幅","20日涨幅",
                 "趋势","动量","信号","得分","评级","仓位建议"
